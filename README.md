@@ -1,4 +1,4 @@
-# Send Response
+# Write Response
 [![Build Status](https://travis-ci.org/markwylde/write-response.svg?branch=master)](https://travis-ci.org/markwylde/write-response)
 [![David DM](https://david-dm.org/markwylde/write-response.svg)](https://david-dm.org/markwylde/write-response)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/markwylde/write-response)

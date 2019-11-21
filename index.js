@@ -5,7 +5,7 @@ function sendJsonResponse (statusCode, message, headers, response) {
     'Content-Type': 'application/json',
     ...headers
   });
-  response.end(JSON.stringify(message, null, 2));
+  response.end(JSON.stringify(message));
 }
 
 function sendTextResponse (statusCode, message, headers, response) {

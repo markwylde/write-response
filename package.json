@@ -4,7 +4,7 @@
   "description": "Send a JSON or a text response to an http response object",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "c8 node test/index.js"
   },
   "author": "",
   "license": "MIT",

@@ -6,6 +6,10 @@
   "scripts": {
     "test": "c8 -o /tmp node test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markwylde/write-response.git"
+  },
   "author": "",
   "license": "MIT",
   "dependencies": {

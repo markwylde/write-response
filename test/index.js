@@ -30,7 +30,7 @@ test('send json', t => {
     },
 
     end: function (data) {
-      t.equal(data, '{\n  "testing": "123"\n}');
+      t.equal(data, '{"testing":"123"}');
     }
   };
 

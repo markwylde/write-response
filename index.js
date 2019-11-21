@@ -23,7 +23,7 @@ function sendResponse (statusCode, message = '', headers, response) {
     throw new ErrorWithObject({ code: 'NO_STATUS_CODE', message: 'You did not set a statusCode' });
   }
 
-  if (!statusCode) {
+  if (!resonse) {
     throw new ErrorWithObject({
       code: 'NO_RESPONSE_OBJECT',
       message: 'You did not set a response object. Nowhere to send response.'

@@ -18,6 +18,34 @@ test('send text', t => {
   sendResponse(200, 'testing', mockResponse);
 });
 
+test('with no status code', t => {
+  t.plan(1);
+
+  const mockResponse = {
+    writeHead: function (statusCode, headers) {
+    },
+
+    end: function (data) {
+    }
+  };
+
+  try {
+    sendResponse(null, 'testing', mockResponse);
+  } catch(error) {
+    t.equal(error.code, 'NO_STATUS_CODE');
+  }
+});
+
+test('with no status code', t => {
+  t.plan(1);
+
+  try {
+    sendResponse(200, 'testing', null);
+  } catch(error) {
+    t.equal(error.code, 'NO_RESPONSE_OBJECT');
+  }
+});
+
 test('send json', t => {
   t.plan(3);
 

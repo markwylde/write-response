@@ -1,6 +1,6 @@
 {
   "name": "write-response",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Send a JSON or a text response to an http response object",
   "main": "index.js",
   "scripts": {

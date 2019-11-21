@@ -12,6 +12,7 @@
     "error-with-object": "^1.1.0"
   },
   "devDependencies": {
+    "c8": "^6.0.1",
     "tape": "^4.11.0"
   }
 }

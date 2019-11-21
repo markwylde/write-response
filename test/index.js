@@ -36,7 +36,7 @@ test('with no status code', t => {
   }
 });
 
-test('with no status code', t => {
+test('with no response object', t => {
   t.plan(1);
 
   try {

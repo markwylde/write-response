@@ -11,7 +11,7 @@ Send a response to a native node http(s) response object
 ### json
 ```javascript
 const writeResponse = require('write-response');
-writeResponse(200, { hello: 'all good here'}, response);
+writeResponse(200, { hello: 'all good here' }, response);
 ```
 
 ### text

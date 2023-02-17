@@ -1,22 +1,28 @@
 {
   "name": "write-response",
-  "version": "1.2.3",
+  "version": "2.0.0",
   "description": "Send a JSON or a text response to an http response object",
   "main": "index.js",
+  "type": "module",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "c8 -o /tmp node test"
+    "test": "c8 -o /tmp node test",
+    "lint": "eslint index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/markwylde/write-response.git"
   },
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "error-with-object": "^1.1.0"
+  "author": {
+    "email": "me@markwylde.com",
+    "name": "Mark Wylde",
+    "url": "https://github.com/markwylde"
   },
+  "license": "MIT",
   "devDependencies": {
-    "c8": "^7.3.0",
-    "tape": "^5.0.1"
+    "basictap": "^4.0.4",
+    "c8": "^7.13.0",
+    "eslint": "^8.34.0",
+    "eslint-config-standard": "^17.0.0"
   }
 }

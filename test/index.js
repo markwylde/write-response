@@ -1,5 +1,5 @@
-const test = require('tape');
-const sendResponse = require('../');
+import test from 'basictap';
+import sendResponse from '../index.js';
 
 test('send text', t => {
   t.plan(3);
@@ -31,7 +31,7 @@ test('with no status code', t => {
 
   try {
     sendResponse(null, 'testing', mockResponse);
-  } catch(error) {
+  } catch (error) {
     t.equal(error.code, 'NO_STATUS_CODE');
   }
 });
@@ -41,7 +41,7 @@ test('with no response object', t => {
 
   try {
     sendResponse(200, 'testing', null);
-  } catch(error) {
+  } catch (error) {
     t.equal(error.code, 'NO_RESPONSE_OBJECT');
   }
 });

@@ -1,7 +1,13 @@
-import {IncomingHttpHeaders} from 'http';
+import {
+  IncomingHttpHeaders,
+  OutgoingHttpHeader,
+  OutgoingHttpHeaders
+} from 'http';
 
 type Respondable = {
-  writeHead: (statusCode: number, headers: object) => void,
+  writeHead: (
+    statusCode: number, statusMessage?: string | undefined, headers?: OutgoingHttpHeaders | OutgoingHttpHeader[] | undefined
+  ) => void,
   end: (data?: string) => void
 }
 
